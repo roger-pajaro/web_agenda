@@ -1,0 +1,25 @@
+.navbar {
+    padding: 0.5rem 1rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: -100px; 
+  }
+  .navbar-brand img {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px; 
+  }
+
+  main {
+    padding: 1rem; 
+  }
+  
+  .d-flex > * {
+    margin: 0.5rem; 
+  }
+  #search {
+    max-width: 300px; /* Ajusta el tamaño según tus necesidades */
+  }

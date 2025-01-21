@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="main.html">
+        <img src="img/imagen.png" alt="agenda">
+        <span>Agenda</span>
+      </a>
+    </div>
+  </nav>
+  <main class="d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between align-items-center">
+      <button class="btn btn-primary" onclick="crear_contacto()">Nuevo contacto</button>
+      <input type="text" id="search" class="form-control" placeholder="Buscar contacto">
+    </div>
+    <table class="table table-striped table-hover" id="tabla">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre <span style="cursor: pointer;" class="fas fa-sort" id="ordenar_nombre"></span></th>
+                <th>Apellidos</th>
+                <th>Dirección</th>
+                <th>Email</th>
+                <th>Telefono</th>
+                <th>F.creación</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="cuerpo-tabla">
+
+        </tbody>
+    </table>
+  </main>
+</body>
+</html>
